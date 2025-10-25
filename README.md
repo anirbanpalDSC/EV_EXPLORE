@@ -11,7 +11,8 @@ archives = ["VESICLEPEDIA_PROTEIN_MRNA_DETAILS_5.1.txt", "VESICLEPEDIA_GENE_DETA
 for a in archives:
     url = f"https://microvesicles.org/Archive/{a}"
     r = requests.get(url, verify=False)  # disable SSL verify only for this call
-    open(a, "wb").write(r.content)```
+    open(a, "wb").write(r.content)
+```
 
 ## Data description
 
